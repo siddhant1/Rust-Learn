@@ -1,23 +1,34 @@
+// // fn main() {
+// //     println!("Testing");
+// // }
+
+// //  Rust is typechecked
 // fn main() {
-//     println!("Testing");
+//     let subject = "World";
+
+//     let a = 1.1;
+//     let mut b = 2.2;
+
+//     b = 4.4;
+
+//     // b is immutable, you can't mutate any variable defined with b ( use mut )
+
+//     // (!) this is a macro ka syntax
+
+//     println!("{},{}!  {}", "Hello", subject, a * b);
+
+//     // panic! throws error
+
+//     println!("{}!", subject)
 // }
 
-//  Rust is typechecked
+use std::io;
+
 fn main() {
-    let subject = "World";
+    println!("Enter your number");
+    let mut guess = String::new();
 
-    let a = 1.1;
-    let b = 2.2;
+    io::stdin().read_line(&mut guess).expect("msg");
 
-    b = 4.4;
-
-    // b is immutable, you can't mutate any variable defined with b ( use mut )
-
-    // (!) this is a macro ka syntax
-
-    println!("{},{}!  {}", "Hello", subject, a * b);
-
-    // panic! throws error
-
-    println!("{}!", subject)
+    println!("Your guessed number is {}", guess)
 }
