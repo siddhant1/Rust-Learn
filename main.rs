@@ -9,7 +9,9 @@ fn main() {
     let mut b = 2.2;
 
     b = 4.4;
-    // b is immutable, you can't mutate any variable defined with b
+    // b is immutable, you can't mutate any variable defined with b ( use mut )
+
+    // (!) this is a macro ka syntax
 
     println!("{},{}!  {}", "Hello", subject, a * b);
 
